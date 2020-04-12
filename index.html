@@ -9,14 +9,142 @@
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <script src="https://kit.fontawesome.com/2ec385d6b5.js" crossorigin="anonymous"></script>
-    <!--no me aparecen las 2 fuentes de google fonts al elegir la font-family en css-->
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css2">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css3">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap');
+    </style>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
     <link rel="icon" href="images/logo.svg" type="images/svg"> 
+    <style> *{ margin: 0px; border: 0px; padding: 0px} </style>  
 </head>
 
 <body>
-    <h1>fuselaje</h1>
-    <h2>segundo título</h2>
+    <!-- INICIO MENU HAMBURGUESA-->
+    <header class="header_nav">
+        <img class="logo" src="images/logo.svg" alt="logo circular azul con letras bd">
+        <nav class="menu_mobile">
+            <input type="checkbox" id="toggle">
+            <label for="toggle"></label>
+            
+            <ul class="menu">
+                <li> <a href="#episodios">EPISODIOS</a></li>
+                <li> <a href="#nosotros">NOSOTROS</a></li>
+                <li> <a href="#entrevistas">ENTREVISTAS</a></li>
+                <li> <a href="#topicos">TÓPICOS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- FIN MENU HAMBURGUESA-->
+     
+
+    <!--INICIO SECTION BANNER-->
+    <section class="banner">
+        <h1 class="h1_banner">Hello <del>world</del> pale blue dot <span class="blue_dot">.</span></h1>
+            <p class="p_banner"> 
+            <span class="a_mobile"> Un podcast que explora el mundo de la programación.
+                Nuevos episodios, todos los jueves casa 15 días. 
+            </span>
+            <span class="a_desktop"> El portal de podcasts que explora el mundo de la programación
+                y la tecnología. Nuevos episodios, todos los jueves cada 15 días. 
+            </span> 
+        </p>
+        <a href="#topicos">CONOCÉ MÁS</a>
+    </section>
+    <!-- FIN DE SECTION BANNER-->
+    
+    
+    <!-- INICIO SECTION EPISODIOS-->
+    <section id="episodios" class="episodios">
+        <h2 class="h2_episodios">Episodios</h2>
+        <div class="lista_spotify">
+            <div><object class="iframe_one" type="text/html" data="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"></object></div>
+            <div><object class="iframe_one" type="text/html" data="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"></object></div>
+            <div><object class="iframe_one" type="text/html" data="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"></object></div>
+            <div><object class="iframe_one" type="text/html" data="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"></object></div>
+        </div>
+    </section>
+    <!-- FIN SECTION DE EPISODIOS-->
+
+
+    <!-- INICIO SECTION De donde venimos-->
+    <section class="phone" id="nosotros">
+        <div class="img_phone">
+            <img src="images/phone.png" alt="phone">
+        </div>
+        <h2 class="h2_phone">De donde venimos</h2>
+        <p class="p_phone">Our posturings, our imagined self-important, the delusion that we have some privileged position in the Universe,
+        are challenged by this point of pale light. <br> <br> Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity,
+        in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+        </p>
+    </section>
+    <!-- FIN SECTION de donde venimos-->
+
+
+    <!-- Inicio SECTION Invitadas-->
+    <section class="invitadas" id="entrevistas">
+        <h2 class="h2_guest">Invitadas/os estelares</h2>
+        <div class="img_guest">
+            <img src="images/grace-hopper.png" alt="Grace Hopper">
+            <img src="images/Katie-Bouman.png" alt="Katie Bouman">
+            <img src="images/Margaret_Hamilton.png" alt="Margaret">
+            <img src="images/Univac_computer.png" alt="An E.R.A.Univac 1103 computer in the 1950s">
+            <img src="images/operators_Eniac.png" alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer">
+            <img src="images/susan-kare.png" alt="Susan Kare">
+        </div>
+    </section>  
+     <!-- FIN SECTION Invitadas-->
+
+
+     <!-- Inicio de Sección TOPICOS-->
+    <section class="topicos" id="topicos">
+        <h2 class="h2_topicos">Algunos de nuestros temas</h2>
+        <div class="div_topicos_seccion">
+            <div class="div_topicos">
+                <img src="images/icon1.svg" alt="Trabajo remoto">
+                <h3>Trabajo remoto</h3>
+            </div>
+            <div class="div_topicos">
+                <img src="images/icon2.svg" alt="Repensando la programación">
+                <h3>Repensando la<br/> programación</h3>
+            </div>
+            <div class="div_topicos">
+                <img src="images/icon3.svg" alt="Bases del código">
+                <h3>Bases del código</h3>
+            </div>
+            <div class="div_topicos">
+                <img src="images/icon4.svg" alt="Seguridad informática">
+                <h3 class="h3_security">Seguridad informática</h3>
+            </div>
+        </div>
+    </section> 
+     <!-- FIN de Sección TOPICOS-->
+
+
+     <!-- FIN de Sección NOVEDADES-->
+     <section class="novedades" id="novedades">
+        <h2 class="h2_novedades">¿Querés las últimas novedades?</h2>
+        <a href="#episodios">ESCUCHÁ LOS EPISODIOS</a>
+    </section> 
+    <!-- FIN de Sección NOVEDADES-->
+
+    
+    <!-- INICIO de FOOTER-->
+    <footer class="footer" id="footer">
+        <div class="c_copyright">
+            <p><i class="far fa-copyright"></i>2019— Hello blue pale dot</p>
+        </div>
+        <div class="i_networks">
+            <a href="https://www.spotify.com/"><i class="fab fa-spotify"></i></a> 
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://telegram.org/"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>    
+    <!-- FIN de FOOTER-->
+
 </body>
 </html>
